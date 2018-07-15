@@ -1,13 +1,13 @@
 
-Boilerplate originated from : https://github.com/patrickvaler/es6-express-mongoose-starter
-All credits goes to original creator, im just using it for an interview test :)
+Boilerplate originated from : https://github.com/patrickvaler/es6-express-mongoose-starter<br>
+All credits goes to original creator, im just using it for an interview test :)<br>
 
-refer to the readme in link above for detailed runthrough of boilerplate
+refer to the readme in link above for detailed runthrough of boilerplate<br>
 
-relevant codes for the test can be found in the /src/api/object folder
+relevant codes for the test can be found in the /src/api/object folder<br>
 
 ### <a name="hostedAt">Hosted at :</a>
-https://secure-escarpment-39411.herokuapp.com/
+https://secure-escarpment-39411.herokuapp.com/<br>
 (append the routes covered below to this url)
 
 
