@@ -1,0 +1,46 @@
+{
+  "name": "es6-express-mongoose-starter",
+  "version": "0.0.4",
+  "description": "Express & Mongoose starter kit written in ES6 for NodeJS.",
+  "main": "src/server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickvaler/es6-express-mongoose-starter.git"
+  },
+  "author": "Patrick Valer <hello@patrickvaler.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.10.2",
+    "morgan": "^1.8.1",
+    "q": "^1.5.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-node6": "^11.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-node6": "^11.0.0",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.4.1",
+    "mockgoose": "^7.3.1",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "serve": "set NODE_ENV=dev&&nodemon src/server.js --exec \"npm run linter -s && babel-node\"",
+    "start": "NODE_ENV=dev nodemon src/server.js --exec \"npm run linter -s && babel-node\"", 
+    "build": "NODE_ENV=prod npm run linter -s && npm run test && babel src --out-dir build",
+    "buildwin": "set NODE_ENV=prod npm run linter -s && npm run test && babel src --out-dir buildwin",
+    "linter": "./node_modules/.bin/eslint src",
+    "test": "npm run linter -s && set NODE_ENV=test mocha --timeout 30000 --compilers js:babel-register"
+  }
+}
